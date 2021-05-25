@@ -2,13 +2,6 @@
 Documentation    doing automation on http://testautomationpractice.blogspot.com/
 Library    RPA.Browser
 
-#*** Test Cases ***
-#Test title
-#    [Tags]    DEBUG
-#    Provided precondition
-#    When action
-#    Then check expectations
-
 *** Keywords ***
 Provided precondition
     Setup system under test
@@ -20,8 +13,8 @@ Task1
     open available browser  url=http://testautomationpractice.blogspot.com/
     maximize browser window
     set selenium speed  2 s
-#    click button  //button[normalize-space()='Click Me']
-#    handle alert  action=ACCEPT
+    click button  //button[normalize-space()='Click Me']
+    handle alert  action=ACCEPT
     LOG  ${CURDIR}
 
     select frame  //iframe[contains(@id,'frame-one')]
@@ -34,5 +27,19 @@ Task1
     Sleep  3
     drag and drop  //div[@id='draggable']  //div[@id='droppable']
     Sleep  1 minutes
+
+    #scroll the window by pixels
+    execute javascript  window.scrollTo(500,1000)
+    sleep  5
+    execute javascript  window.scrollTo(0,0)
+    sleep  5
+    #scroll to the element
+    scroll element into view  //div[@id='slider']
+    sleep  5
+    #scroll to the end
+    execute javascript  window.scrollTo(0, document.body.scrollHeight)
+    sleep  5
+
+    
 
 
