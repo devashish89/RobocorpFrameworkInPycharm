@@ -9,7 +9,6 @@ Provided precondition
 
 *** Tasks ***
 Task1
-
     open available browser  url=http://testautomationpractice.blogspot.com/
     maximize browser window
     set selenium speed  2 s
@@ -33,12 +32,36 @@ Task1
     sleep  5
     execute javascript  window.scrollTo(0,0)
     sleep  5
-    #scroll to the element
-    scroll element into view  //div[@id='slider']
+    scroll to the element
+    scroll element into view  //a[normalize-space()='Home']
     sleep  5
     #scroll to the end
     execute javascript  window.scrollTo(0, document.body.scrollHeight)
     sleep  5
+
+    # handle jquery resizable
+    Sleep  2
+    drag and drop by offset  //div[@class='ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se']  161  113
+    Sleep  5
+
+   #radio button
+   select frame  //iframe[contains(@id,'frame-one')]
+   input text  //input[@type="email"]  hello@gmail.com
+   sleep  5
+   click element  //label[@for="RESULT_RadioButton-7_0"]
+   sleep  5
+   unselect frame
+
+   sleep  5
+
+   open available browser  http://www.practiceselenium.com/practice-form.html
+   maximize browser window
+   set selenium speed  2
+   select radio button  sex  Female
+   select checkbox  //input[@id='tool-0']
+   select checkbox  //input[@id='tool-1']
+
+   sleep  10
 
     
 
