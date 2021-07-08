@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.8.3 on win32)" generated="20210708 18:49:41.161" rpa="true" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="BasicOperations2" source="C:\Users\91836\PycharmProjects\RobotFramework\BasicOperations2.robot">
+<test id="s1-s1-t1" name="Task1">
+<kw name="Open Available Browser" library="RPA.Browser">
+<arg>http://www.practiceselenium.com/practice-form.html</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20210708 18:49:41.994" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20210708 18:49:42.007" level="INFO">Created download root directory: C:\Users\91836\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20210708 18:49:42.007" level="INFO">Created symlink directory: C:\Users\91836\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20210708 18:49:42.008" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20210708 18:49:43.940" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20210708 18:49:43.940" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20210708 18:49:43.940" level="INFO">Opening url 'http://www.practiceselenium.com/practice-form.html'</msg>
+<status status="PASS" starttime="20210708 18:49:41.992" endtime="20210708 18:49:46.471"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210708 18:49:46.472" endtime="20210708 18:49:46.689"/>
+</kw>
+<kw name="Set Selenium Speed" library="RPA.Browser">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210708 18:49:46.690" endtime="20210708 18:49:46.691"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>//input[@name='firstname']</arg>
+<arg>Devashish</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210708 18:49:46.692" level="INFO">Typing text 'Devashish' into text field '//input[@name='firstname']'.</msg>
+<status status="PASS" starttime="20210708 18:49:46.691" endtime="20210708 18:49:49.927"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>//input[@name='lastname']</arg>
+<arg>Nigam</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210708 18:49:49.928" level="INFO">Typing text 'Nigam' into text field '//input[@name='lastname']'.</msg>
+<status status="PASS" starttime="20210708 18:49:49.927" endtime="20210708 18:49:53.065"/>
+</kw>
+<kw name="Select Radio Button" library="RPA.Browser">
+<arg>sex</arg>
+<arg>Female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20210708 18:49:53.066" level="INFO">Selecting 'Female' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20210708 18:49:53.065" endtime="20210708 18:49:56.138"/>
+</kw>
+<kw name="Select Checkbox" library="RPA.Browser">
+<arg>//input[@id='tool-0']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20210708 18:49:56.139" level="INFO">Selecting checkbox '//input[@id='tool-0']'.</msg>
+<status status="PASS" starttime="20210708 18:49:56.138" endtime="20210708 18:50:01.240"/>
+</kw>
+<kw name="Select Checkbox" library="RPA.Browser">
+<arg>//input[@id='tool-1']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20210708 18:50:01.241" level="INFO">Selecting checkbox '//input[@id='tool-1']'.</msg>
+<status status="PASS" starttime="20210708 18:50:01.240" endtime="20210708 18:50:06.332"/>
+</kw>
+<kw name="Select From List By Label" library="RPA.Browser">
+<arg>//select[@id='selenium_commands']</arg>
+<arg>Browser Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20210708 18:50:06.333" level="INFO">Selecting options from selection list '//select[@id='selenium_commands']' by label Browser Commands.</msg>
+<status status="PASS" starttime="20210708 18:50:06.332" endtime="20210708 18:50:13.448"/>
+</kw>
+<kw name="Select From List By Label" library="RPA.Browser">
+<arg>//select[@id='selenium_commands']</arg>
+<arg>Switch Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20210708 18:50:13.448" level="INFO">Selecting options from selection list '//select[@id='selenium_commands']' by label Switch Commands.</msg>
+<status status="PASS" starttime="20210708 18:50:13.448" endtime="20210708 18:50:20.550"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>//button[normalize-space()='OK']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210708 18:50:20.551" level="INFO">Clicking element '//button[normalize-space()='OK']'.</msg>
+<status status="PASS" starttime="20210708 18:50:20.550" endtime="20210708 18:50:23.332"/>
+</kw>
+<status status="PASS" starttime="20210708 18:49:41.991" endtime="20210708 18:50:23.332"/>
+</test>
+<doc>doing automation on http://testautomationpractice.blogspot.com/</doc>
+<status status="PASS" starttime="20210708 18:49:41.206" endtime="20210708 18:50:23.333"/>
+</suite>
+<status status="PASS" starttime="20210708 18:49:41.175" endtime="20210708 18:50:23.335"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="BasicOperations2">Suites.BasicOperations2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210708 18:49:41.780" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
+</errors>
+</robot>

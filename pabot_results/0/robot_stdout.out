@@ -1,0 +1,14 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.BasicOperations :: doing automation on http://testautomationpractice...
+==============================================================================
+Task1                                                                 | PASS |
+------------------------------------------------------------------------------
+Suites.BasicOperations :: doing automation on http://testautomatio... | PASS |
+1 task, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 task, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\91836\PycharmProjects\RobotFramework\pabot_results\0\output.xml

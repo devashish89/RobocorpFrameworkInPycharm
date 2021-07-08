@@ -1,0 +1,6 @@
+datasources:96f14a1324946c3aea8ca410db8ff1cebb9a9725
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:451d7c4bc26ca7d657667255c7cc8f8f05f84297
+--suite Suites.BasicOperations
+--suite Suites.BasicOperations2
